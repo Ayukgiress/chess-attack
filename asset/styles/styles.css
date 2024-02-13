@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fdfbf9;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    background: #ebebee;
+    color: black;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 20px;
+  }
+  
+  .chessboard{
+    margin: 0 auto;
+    width: 480px;
+    height: 480px;
+    text-align: center;
+    border: 15px solid #09090a;
+    font-size: 0;
+    padding: 0;
+  }
+  
+   .dark {
+    width: 60px;
+    height: 60px;
+    background-color: #080808;
+    display: table-cell;
+    vertical-align: baseline;
+    border:5px solid #131212;
+  
+  }
+  
+  .light {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    display: table-cell;
+    vertical-align: baseline;
+    border: 5px solid #fff;
+  }
+  
+  #check, #refresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    background: #080808;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  #check {
+    margin: auto;
+    margin-top: 25px;
+    float: left;
+  }
+  
+  #refresh {
+    margin: auto;
+    margin-top: 25px;
+    float: right;
+  }
+  
+  #check:hover, #refresh:hover {
+    background: #340a3f;
+  }
+  
+  .alerts {
+    display: inline;
+  }
+  #alert {
+    display: block;
+    font-size: 18px;
+    color: #008000;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-style: oblique;
+  }
+  
+  #alerterror {
+    display: block;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+  
