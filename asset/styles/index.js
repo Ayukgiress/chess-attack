@@ -14,7 +14,6 @@ function selectPosition () {
   if (selectedIndex >= 0) {
     this.style.border = 'none'
     noSelected--
-    
   } else if (noSelected < 2) {
     this.style.border = '5px solid green'
     selectedCell.push(id)
@@ -23,7 +22,6 @@ function selectPosition () {
     alerts.textContent = ' You can only make two moves!'
     alert.textContent = ''
   }
-
 }
 
 for (let i = 0; i < select.length; i++) {
@@ -60,9 +58,7 @@ function attackFunction () {
     }
 
     const positionRightLeft = Math.abs(parseInt(position1) - parseInt(position2))
-
     const moduleRightLeft = positionRightLeft % 9 === 0 
-
     if (moduleRightLeft) {
       return true
     }
@@ -78,5 +74,4 @@ function checkAttack () {
     alerts.textContent = ''
   }
   alerts.style.display = 'block'
- 
 }
