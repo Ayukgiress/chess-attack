@@ -56,11 +56,13 @@ function attackFunction () {
     if (cell11 - cell12 === cell21 - cell22) {
       return true
     }
+
     const positionRightLeft = Math.abs(parseInt(position1) - parseInt(position2))
     const moduleRightLeft = positionRightLeft % 9 === 0 
     if (moduleRightLeft) {
       return true
     }
+    
     alerts.textContent = 'A Queen cannot be attacked!'
     alert.textContent = ''
   }
