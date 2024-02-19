@@ -58,15 +58,15 @@ function attackFunction () {
     }
 
     const positionRightLeft = Math.abs(parseInt(position1) - parseInt(position2))
-    const moduleRightLeft = positionRightLeft % 9 === 0 
+    const moduleRightLeft = positionRightLeft % 9 === 0
     if (moduleRightLeft) {
       return true
     }
-    
+
     alerts.textContent = 'A Queen cannot be attacked!'
     alert.textContent = ''
   }
-} 
+}
 
 function checkAttack () {
   const attack = attackFunction()
