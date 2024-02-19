@@ -64,7 +64,7 @@ function attackFunction () {
     alerts.textContent = 'A Queen cannot be attacked!'
     alert.textContent = ''
   }
-}
+} 
 
 function checkAttack () {
   const attack = attackFunction()
